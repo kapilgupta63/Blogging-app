@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blogs</title>
+    <style>
+        body, h1, h2, p, a {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            background: #444;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            flex: 1;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        article {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        article h2 {
+            margin-bottom: 10px;
+            color: #444;
+        }
+        article time {
+            font-size: 0.9em;
+            color: #999;
+        }
+        article p {
+            margin: 10px 0;
+        }
+        article a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        article a:hover {
+            text-decoration: underline;
+        }
+        form {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f9f9f9;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        form div {
+            margin-bottom: 15px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        form input[type="text"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form textarea {
+            resize: vertical;
+            height: 150px;
+        }
+        form button {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: #555;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+            main {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tech Blogs</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/About.html">About</a>
+        <a href="/Contact.html">Contact</a>
+    </nav>
+    <main>
+        <article>
+            <h2>Datascience</h2>
+            <p>Posted on <time datetime="2024-05-21">May 21, 2024</time></p>
+            <p>Data science is defined as an interdisciplinary field that involves extracting knowledge and insights from data using scientific methods, algorithms, and systems. Data Science combines elements of mathematics, statistics, computer science, and domain expertise to analyze large volumes of structured and unstructured data. The goal of data science is to uncover patterns, trends, and relationships within the data to make informed decisions, solve complex problems, and create predictive models.</p>
+            <a href="#">Read more...</a>
+        </article>
+        <article>
+            <h2>Machine Learning</h2>
+            <p>Posted on <time datetime="2024-05-20">May 20, 2024</time></p>
+            <p>Machine learning (ML) is a subset of artificial intelligence (AI) that focuses on developing algorithms and statistical models that enable computers to perform specific tasks without explicit instructions. Instead, these systems learn from patterns and insights derived from data. Here are some key points about machine learning:
+
+                Data-Driven: Machine learning relies on data to learn and make predictions. It uses historical data as input to predict new output values.
+                
+                Types of Learning:
+                
+                Supervised Learning: The model is trained on a labeled dataset, which means that each training example is paired with an output label. The goal is to learn a mapping from inputs to outputs.
+                Unsupervised Learning: The model is given data without explicit instructions on what to do with it. It must find patterns and relationships in the data. Examples include clustering and association tasks.
+                Semi-Supervised Learning: This method involves a small amount of labeled data and a large amount of unlabeled data. It combines both supervised and unsupervised learning techniques.
+                Reinforcement Learning: The model learns by interacting with an environment and receiving feedback in the form of rewards or penalties. The goal is to learn a strategy that maximizes cumulative rewards.</p>
+            <a href="#">Read more...</a>
+        </article>
+        
+        <form id="new-blog-form">
+            <h2>Post a New Blog</h2>
+            <div>
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div>
+                <label for="date">Date:</label>
+                <input type="text" id="date" name="date" placeholder="YYYY-MM-DD" required>
+            </div>
+            <div>
+                <label for="content">Content:</label>
+                <textarea id="content" name="content" required></textarea>
+            </div>
+            <button type="submit">Post</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Simple Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
